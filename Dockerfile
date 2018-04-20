@@ -17,4 +17,4 @@ ADD . /usr/src/app/
 
 EXPOSE 80 25
 
-CMD ["bin/maildev", "--web", "80", "--smtp", "25"]
+ENTRYPOINT ["bin/maildev", "--web", "80", "--smtp", "25"]

@@ -54,7 +54,16 @@ environment variables to configure how to send email.
 
 ## Advanced usage
 
-*Needs documentation for how to use cli arguments*
+By default, MailDev docker will run with the following arguments:
+```
+--web 80 --smtp 25
+```
+
+You can use any CLI argument using the following syntax:
+
+```
+$ docker run -p 1080:8888 --name maildev djfarrelly/maildev -w 8888 --outgoing-host anyhost --outgoing-port 587
+```
 
 ## Docker Compose
 
